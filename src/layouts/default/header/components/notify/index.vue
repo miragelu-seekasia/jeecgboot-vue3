@@ -69,7 +69,7 @@
 
       const popoverVisible = ref<boolean>(false);
       onMounted(() => {
-       initWebSocket();
+       // initWebSocket();
       });
 
       const messageCount = ref<number>(0)

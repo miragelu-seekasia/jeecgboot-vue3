@@ -34,7 +34,18 @@ export const getPositionList = (params) => {
  * @param params
  */
 export const getUserList = (params) => {
-  return defHttp.get({ url: Api.userList, params });
+  return {
+    countId: null,
+    current: 1,
+    maxLimit: null,
+    optimizeCountSql: true,
+    orders: [],
+    pages: 1,
+    records: [{"id":"1179675874431131649","username":"qinfeng","realname":"qinfeng","avatar":"https://static.jeecg.com/temp/jmlogo_1606575041993.png","birthday":null,"sex":2,"email":"11111@163.com","phone":"13426111111","orgCode":"A01A05A01","loginTenantId":null,"orgCodeTxt":"研发一部(JEECG),财务,研发部,财务部","status":1,"delFlag":0,"workNo":"200","post":"leader","telephone":"","createBy":"admin","createTime":"2019-10-03 16:33:40","updateBy":"admin","updateTime":"2022-11-15 19:09:16","activitiSync":1,"userIdentity":2,"departIds":"57197590443c44f083d42ae24ef26a2c,2ea16c76c6e14d7d80e734af209916d3","relTenantIds":"","clientId":null,"homePath":null,"sex_dictText":"女","status_dictText":"正常","departIds_dictText":"研发部,研发一部(JEECG)"},],
+    searchCount: true,
+    size: 10,
+    total: 1,
+  };
 };
 
 /**
